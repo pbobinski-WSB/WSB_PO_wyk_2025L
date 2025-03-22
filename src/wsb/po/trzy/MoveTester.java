@@ -6,6 +6,8 @@ public class MoveTester {
     public static void main(String[] args) {
         Rectangle box = new Rectangle(5, 10, 20, 30);
 
+        Rectangle box2 = box;
+
         // Move the rectangle
         box.translate(15, 25);
 
@@ -17,5 +19,7 @@ public class MoveTester {
         System.out.print("y: ");
         System.out.println(box.getY());
         System.out.println("Expected: 35");
+
+        System.out.println(box2);
     }
 }
