@@ -1,4 +1,4 @@
-package wsb.po.trzy;
+package wsb.po.cztery;
 
 public class EqualsAndCompare {
 
