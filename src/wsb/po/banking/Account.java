@@ -1,13 +1,13 @@
 package wsb.po.banking;
 
-public class BankAccount {
+public class Account {
 
     private double balance;
 
     /**
      * Constructs a bank account with a zero balance.
      */
-    public BankAccount() {
+    public Account() {
 
         balance = 0;
     }
@@ -17,7 +17,7 @@ public class BankAccount {
      *
      * @param balance the initial balance
      */
-    public BankAccount(double balance) {
+    public Account(double balance) {
 
         this.balance = balance;
     }

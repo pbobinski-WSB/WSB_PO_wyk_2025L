@@ -1,4 +1,4 @@
-package wsb.po.cztery;
+package wsb.po.piec;
 
 import java.util.LinkedList;
 import java.util.PriorityQueue;

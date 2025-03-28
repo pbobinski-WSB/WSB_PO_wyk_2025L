@@ -1,6 +1,6 @@
 package wsb.po.banking;
 
-public class BankAccountTester {
+public class TestBanking {
 
     public static void main(String[] args) {
 
@@ -8,15 +8,15 @@ public class BankAccountTester {
 
         Customer klient2 = new Customer("Bryant", "Owen");
 
-        BankAccount account = new BankAccount(500);
+        Account account = new Account(500);
         klient1.addAccount(account);
-        account = new BankAccount(200);
+        account = new Account(200);
         klient1.addAccount(account);
-        account = new BankAccount(200);
+        account = new Account(200);
         klient2.addAccount(account);
-        account = new BankAccount(1500);
+        account = new Account(1500);
         klient2.addAccount(account);
-        account = new BankAccount(200);
+        account = new Account(200);
         klient2.addAccount(account);
 
         System.out.println("Klient 1 " + klient1);

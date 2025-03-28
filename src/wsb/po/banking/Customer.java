@@ -7,17 +7,17 @@ public class Customer {
     private final String firsName;
     private final String lastName;
 
-    final private ArrayList<BankAccount> accounts = new ArrayList<>();
+    final private ArrayList<Account> accounts = new ArrayList<>();
 
     public int getNumberOfAccounts() {
         return accounts.size();
     }
 
-    public void addAccount(BankAccount a) {
+    public void addAccount(Account a) {
         accounts.add(a);
     }
 
-    public BankAccount getAccount(int i) {
+    public Account getAccount(int i) {
         if (i >= getNumberOfAccounts()) {
             return null;
         }
