@@ -1,4 +1,4 @@
-package wsb.po.piec;
+package wsb.po.szescTODO;
 
 import java.util.*;
 
