@@ -8,6 +8,21 @@ public class BankAccount implements Measurable
 {  
    private double balance;
 
+   public BankAccount(double balance, String type) {
+      this.balance = balance;
+      this.type = type;
+   }
+
+   public String getType() {
+      return type;
+   }
+
+   public void setType(String type) {
+      this.type = type;
+   }
+
+   private String type;
+
    /**
       Constructs a bank account with a zero balance.
    */

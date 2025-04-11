@@ -11,13 +11,17 @@ public class DataSetTester
    public static void main(String[] args)
    {  
       DataSet data = new DataSet();
-      data.add(new BankAccount(100));
-      data.add(new BankAccount(5.5));
-      data.add(new BankAccount(20));
-      data.add(new BankAccount(12.34));
+      data.add(new BankAccount(100,"a"));
+      data.add(new BankAccount(5.5,"a"));
+      data.add(new BankAccount(20,"b"));
+      data.add(new BankAccount(12.34,"b"));
 
       System.out.println("Average = " + data.getAverage());
       System.out.println("Maximum = " + data.getMaximum());
+      //System.out.println("Maximum type = " + data.getMaximum().getType());
+      System.out.println("Maximum type = " + ((BankAccount)data.getMaximum()).getType());
+
+
 
       data = new DataSet();
       data.add(new Coin(100,"a"));
@@ -27,5 +31,8 @@ public class DataSetTester
 
       System.out.println("Average = " + data.getAverage());
       System.out.println("Maximum = " + data.getMaximum());
+      //System.out.println("Maximum name = " + data.getMaximum().getName());
+      System.out.println("Maximum name = " + ((Coin)data.getMaximum()).getName());
+
    }
 }
