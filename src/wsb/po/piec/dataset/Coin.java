@@ -3,7 +3,7 @@ package wsb.po.piec.dataset;
 /**
    A coin with a monetary value.
 */
-public class Coin
+public class Coin implements Measurable
 {
    private double value;
    private String name;
@@ -43,5 +43,10 @@ public class Coin
               "value=" + value +
               ", name='" + name + '\'' +
               '}';
+   }
+
+   @Override
+   public double getMeasure() {
+      return getValue();
    }
 }

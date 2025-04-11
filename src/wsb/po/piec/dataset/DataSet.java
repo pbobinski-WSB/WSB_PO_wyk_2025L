@@ -6,7 +6,7 @@ package wsb.po.piec.dataset;
 public class DataSet
 {
    private double sum;
-   private BankAccount maximum;
+   private Measurable maximum;
    private int count;
 
    /**
@@ -23,10 +23,10 @@ public class DataSet
       Adds a data value to the data set
       @param x a data value
    */
-   public void add(BankAccount x)
+   public void add(Measurable x)
    {
-      sum = sum + x.getBalance();
-      if (count == 0 || maximum.getBalance() < x.getBalance()) maximum = x;
+      sum = sum + x.getMeasure();
+      if (count == 0 || maximum.getMeasure() < x.getMeasure()) maximum = x;
       count++;
    }
 
@@ -44,7 +44,7 @@ public class DataSet
       Gets the largest of the added data.
       @return the maximum or 0 if no data has been added
    */
-   public BankAccount getMaximum()
+   public Measurable getMaximum()
    {
       return maximum;
    }

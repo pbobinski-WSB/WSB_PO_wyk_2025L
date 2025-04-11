@@ -18,5 +18,14 @@ public class DataSetTester
 
       System.out.println("Average = " + data.getAverage());
       System.out.println("Maximum = " + data.getMaximum());
+
+      data = new DataSet();
+      data.add(new Coin(100,"a"));
+      data.add(new Coin(5.5,"b"));
+      data.add(new Coin(20,"c"));
+      data.add(new Coin(12.34,"d"));
+
+      System.out.println("Average = " + data.getAverage());
+      System.out.println("Maximum = " + data.getMaximum());
    }
 }

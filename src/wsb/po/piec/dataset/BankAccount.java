@@ -4,7 +4,7 @@ package wsb.po.piec.dataset;
    A bank account has a balance that can be changed by 
    deposits and withdrawals.
 */
-public class BankAccount
+public class BankAccount implements Measurable
 {  
    private double balance;
 
@@ -59,5 +59,10 @@ public class BankAccount
       return "BankAccount{" +
               "balance=" + balance +
               '}';
+   }
+
+   @Override
+   public double getMeasure() {
+      return getBalance();
    }
 }
