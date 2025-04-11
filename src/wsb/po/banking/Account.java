@@ -27,9 +27,13 @@ public class Account {
      *
      * @param balance the amount to deposit
      */
-    public void deposit(double balance) {
-
-        this.balance = this.balance + balance;
+    public boolean deposit(double balance) {
+        //proste zabezpieczenie
+        if (balance < 0) {
+            return false;
+        }
+        this.balance += balance; // balance = balance + amount
+        return true;
     }
 
     /**
@@ -37,9 +41,13 @@ public class Account {
      *
      * @param balance the amount to withdraw
      */
-    public void withdraw(double balance) {
-
-        this.balance = this.balance - balance;
+    public boolean withdraw(double balance) {
+        //proste zabezpieczenie
+        if (balance > this.balance) {
+            return false;
+        }
+        this.balance -= balance; // balance = balance - amount
+        return true;
     }
 
     /**

@@ -10,3 +10,7 @@ _Będzie rozwijany przez cały semestr_
 2. Dodajemy klienta, który może mieć wiele kont
 
 ![img_1.png](img_1.png)
+
+3. Dziedziczenie kont
+
+![img_2.png](img_2.png)
