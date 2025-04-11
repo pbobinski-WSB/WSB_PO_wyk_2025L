@@ -6,27 +6,30 @@ package wsb.po.piec.dataset;
 public class DataSet
 {
    private double sum;
-   private Measurable maximum;
+   private Object maximum;
    private int count;
+
+   private Measurer measurer;
 
    /**
       Constructs an empty data set.
    */
-   public DataSet()
+   public DataSet(Measurer measurer)
    {
       sum = 0;
       count = 0;
       maximum = null;
+      this.measurer = measurer;
    }
 
    /**
       Adds a data value to the data set
       @param x a data value
    */
-   public void add(Measurable x)
+   public void add(Object x)
    {
-      sum = sum + x.getMeasure();
-      if (count == 0 || maximum.getMeasure() < x.getMeasure()) maximum = x;
+      sum = sum + measurer.measure(x);
+      if (count == 0 || measurer.measure(maximum) < measurer.measure(x)) maximum = x;
       count++;
    }
 
@@ -44,8 +47,12 @@ public class DataSet
       Gets the largest of the added data.
       @return the maximum or 0 if no data has been added
    */
-   public Measurable getMaximum()
+   public Object getMaximum()
    {
       return maximum;
+   }
+
+   public Measurer getMeasurer () {
+      return measurer;
    }
 }
