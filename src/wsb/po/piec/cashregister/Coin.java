@@ -3,20 +3,23 @@ package wsb.po.piec.cashregister;
 /**
    A coin with a monetary value.
 */
-public class Coin
+public enum Coin
 {
-   private double value;
-   private String name;
+   PENNY(1),
+   NICKEL(5),
+   DIME(10),
+   QUARTER(25),
+   DOLLAR(100);
+
+   private final double value;
 
    /**
       Constructs a coin.
-      @param value the monetary value of the coin
-      @param name the name of the coin
+      @param centsValue the monetary value of the coin
    */
-   public Coin(double value, String name)
+   Coin(int centsValue)
    { 
-      this.value = value;
-      this.name = name;
+      this.value = centsValue/100.0;
    }
 
    /**
@@ -28,14 +31,6 @@ public class Coin
       return value;
    }
 
-   /**
-      Gets the coin name.
-      @return the name
-   */
-   public String getName() 
-   {
-      return name;
-   }
 
 
 }

@@ -11,19 +11,19 @@ public class CashRegisterTester
 
       register.recordPurchase(0.75);
       register.recordPurchase(1.50);
-      Coin dollar = new Coin(1,"dollar");
-      Coin dime = new Coin(0.1, "dime");
-      register.enterPayment(2, dollar);
-      register.enterPayment(5, dime);
+      register.enterPayment(2, Coin.DOLLAR);
+      register.enterPayment(5, Coin.DIME);
       System.out.print("Change: ");
-      System.out.println(register.giveChange());
+      double change = register.giveChange();
+      System.out.println(change);
       System.out.println("Expected: 0.25");
+      System.out.print("In PLN: ");
+      System.out.println(Exchange.usd2pln(change));
 
       register.recordPurchase(2.25);
       register.recordPurchase(19.25);
-      register.enterPayment(23, dollar);
-      Coin quarter = new Coin(0.25, "quarter");
-      register.enterPayment(2, quarter);
+      register.enterPayment(23, Coin.DOLLAR);
+      register.enterPayment(2, Coin.QUARTER);
       System.out.print("Change: ");
       System.out.println(register.giveChange());
       System.out.println("Expected: 2.0");
