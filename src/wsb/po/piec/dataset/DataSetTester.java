@@ -5,9 +5,25 @@ package wsb.po.piec.dataset;
    of input values.
 */
 public class DataSetTester
-{  
+{
+
+
+
    public static void main(String[] args)
    {
+      class BankAccountMeasurer implements Measurer{
+         @Override
+         public double measure(Object anObject) {
+            return ((BankAccount)anObject).getMeasure() * Exchange.toEurRate;
+         }
+      }
+      class CoinMeasurer implements Measurer{
+         @Override
+         public double measure(Object anObject) {
+            return ((Coin)anObject).getMeasure() * Exchange.toPlnRate;
+         }
+      }
+
       Measurer m = new BankAccountMeasurer();
       DataSet data = new DataSet(m);
       data.add(new BankAccount(100,"a"));
