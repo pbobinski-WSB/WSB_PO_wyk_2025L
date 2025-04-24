@@ -1,4 +1,4 @@
-package wsb.po.szescTODO;
+package wsb.po.szesc.collections;
 
 import java.util.LinkedList;
 import java.util.PriorityQueue;

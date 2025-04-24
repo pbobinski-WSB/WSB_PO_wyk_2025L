@@ -1,4 +1,4 @@
-package wsb.po.piec.cloning;
+package wsb.po.szesc.cloning;
 
 import java.util.HashMap;
 import java.util.Iterator;

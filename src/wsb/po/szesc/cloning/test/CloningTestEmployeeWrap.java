@@ -1,6 +1,6 @@
-package wsb.po.piec.cloning.test;
+package wsb.po.szesc.cloning.test;
 
-import wsb.po.piec.cloning.EmployeeWrap;
+import wsb.po.szesc.cloning.EmployeeWrap;
 
 import java.util.HashMap;
 import java.util.Map;

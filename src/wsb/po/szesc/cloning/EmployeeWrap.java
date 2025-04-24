@@ -1,4 +1,4 @@
-package wsb.po.piec.cloning;
+package wsb.po.szesc.cloning;
 
 public class EmployeeWrap extends Employee implements Cloneable {
 
