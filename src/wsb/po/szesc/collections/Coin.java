@@ -7,7 +7,7 @@ import java.util.Objects;
 /**
    A coin with a monetary value.
 */
-public class Coin implements Measurable
+public class Coin implements Measurable, Comparable
 {
    private double value;
    private String name;
@@ -69,6 +69,14 @@ public class Coin implements Measurable
    @Override
    public int hashCode() {
       return Objects.hash(getValue(), getName());
+   }
+
+   @Override
+   public int compareTo(Object o) {
+      if (this == o) return 0;
+      if (!(o instanceof Coin)) return -1;
+      Coin coin = (Coin) o;
+      return Double.compare(this.getValue(), coin.getValue() );
    }
    /**/
 
