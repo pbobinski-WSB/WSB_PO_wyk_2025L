@@ -25,29 +25,25 @@ public class Account {
     /**
      * Deposits money into the bank account.
      *
-     * @param balance the amount to deposit
+     * @param amount the amount to deposit
      */
-    public boolean deposit(double balance) {
-        //proste zabezpieczenie
-        if (balance < 0) {
-            return false;
+    public void deposit (double amount) throws NegativeDepositException {
+        if (amount < 0) {
+            throw new NegativeDepositException();
         }
-        this.balance += balance; // balance = balance + amount
-        return true;
+        balance += amount; // balance = balance + amount
     }
 
     /**
      * Withdraws money from the bank account.
      *
-     * @param balance the amount to withdraw
+     * @param amount the amount to withdraw
      */
-    public boolean withdraw(double balance) {
-        //proste zabezpieczenie
-        if (balance > this.balance) {
-            return false;
+    public void withdraw (double amount) throws OverdraftException{
+        if (amount > balance) {
+            throw new OverdraftException("przekroczono saldo",amount - balance);
         }
-        this.balance -= balance; // balance = balance - amount
-        return true;
+        balance -= amount; // balance = balance - amount
     }
 
     /**

@@ -14,3 +14,7 @@ _Będzie rozwijany przez cały semestr_
 3. Dziedziczenie kont
 
 ![img_2.png](img_2.png)
+
+4. Wyjątki
+
+![img_3.png](img_3.png)
