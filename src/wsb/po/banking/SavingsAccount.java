@@ -1,5 +1,7 @@
 package wsb.po.banking;
 
+import java.io.IOException;
+
 public class SavingsAccount extends Account {
 
     private double interestRate = 0;
@@ -12,4 +14,12 @@ public class SavingsAccount extends Account {
     public double getInterestRate() {
         return interestRate;
     }
+
+    @Override
+    public String toString() {
+        return " SavingsAccount{" +
+                '}' + super.toString();
+    }
+
+
 }

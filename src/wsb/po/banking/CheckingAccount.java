@@ -1,5 +1,7 @@
 package wsb.po.banking;
 
+import java.io.IOException;
+
 public class CheckingAccount extends Account {
 
     private double overdraftProtection = 0;
@@ -31,9 +33,10 @@ public class CheckingAccount extends Account {
 
     @Override
     public String toString() {
-        return super.toString() +
-                " CheckingAccount{" +
+        return " CheckingAccount{" +
                 "overdraftProtection=" + overdraftProtection +
-                '}';
+                '}' + super.toString();
     }
+
+
 }

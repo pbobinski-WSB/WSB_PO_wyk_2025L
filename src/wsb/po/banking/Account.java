@@ -1,6 +1,9 @@
 package wsb.po.banking;
 
-public class Account {
+import java.io.IOException;
+import java.io.Serializable;
+
+public class Account implements Serializable {
 
     private double balance;
 
@@ -60,7 +63,6 @@ public class Account {
     public String toString() {
         return "Wartość konta = " + this.balance;
     }
-
 
 }
 

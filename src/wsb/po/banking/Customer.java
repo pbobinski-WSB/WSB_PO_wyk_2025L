@@ -1,8 +1,11 @@
 package wsb.po.banking;
 
+import java.io.*;
 import java.util.ArrayList;
 
-public class Customer {
+public class Customer implements Serializable {
+
+    private static final long serialVersionUID = 6607357493859031942L;
 
     private final String firsName;
     private final String lastName;
@@ -44,5 +47,21 @@ public class Customer {
                 ", lastName='" + getLastName() + '\'' +
                 ", number of accounts=" + getNumberOfAccounts() +
                 '}';
+    }
+
+
+    public void save(int id) throws IOException {
+        String fname = "Klient_"+id+".ser";
+        System.out.println("Saving "+this+" to " + fname);
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fname));
+        oos.writeObject(this);
+    }
+
+    public static Customer load(int id) throws IOException, ClassNotFoundException {
+        String fname = "Klient_"+id+".ser";
+        System.out.println("Loading customer"+" from " + fname);
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fname));
+        return (Customer)ois.readObject();
+
     }
 }

@@ -191,3 +191,4 @@ cython_debug/
 #.idea/
 /out/production
 /WSB_PO_wyk_2025L.iml
+/*.ser
