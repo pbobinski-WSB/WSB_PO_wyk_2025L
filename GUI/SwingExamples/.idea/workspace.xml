@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fd42a5fb-d83e-4be3-aefb-75590bd1d718" name="Changes" comment="Zmiana pakietów, nowe przykłądy Swing" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;pbobinski-WSB&quot;
+  }
+}</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="b3a0edaa-408b-4fc2-94cf-5cb42808dcf0" />
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/pbobinsk/JavaTests.git&quot;,
+    &quot;accountId&quot;: &quot;dd0339d3-228f-4176-b2b9-f9c74297a272&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2vmACHnsCZmIohnEqjMXWuMLRIp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "Application.SimpleSwing.executor": "Run",
+    "Application.SwingExample.executor": "Run",
+    "JUnit.CalculatorUITest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/DELL/venvTests/JavaTests/SwingExamples/src/main",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\venvTests\JavaTests\SwingExamples\src\main" />
+      <recent name="C:\Users\DELL\venvTests\JavaTests\SwingExamples\src\main\java\org\swing\examples" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.swing.examples.more" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SimpleSwing">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.swing.examples.more.App" />
+      <module name="SwingExamples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.swing.examples.more.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleSwing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.swing.examples.SimpleSwing" />
+      <module name="SwingExamples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.swing.examples.more.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwingExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.swing.examples.SwingExample" />
+      <module name="SwingExamples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.swing.examples.more.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorUITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SwingExamples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.swing.examples.more.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.swing.examples.more" />
+      <option name="MAIN_CLASS_NAME" value="org.swing.examples.more.CalculatorUITest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SimpleSwing" />
+        <item itemvalue="JUnit.CalculatorUITest" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.SwingExample" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd42a5fb-d83e-4be3-aefb-75590bd1d718" name="Changes" comment="" />
+      <created>1744739747135</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744739747135</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Zmiana pakietów, nowe przykłądy Swing">
+      <option name="closed" value="true" />
+      <created>1746550240705</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746550240705</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="Zmiana pakietów, nowe przykłądy Swing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zmiana pakietów, nowe przykłądy Swing" />
+  </component>
+</project>
