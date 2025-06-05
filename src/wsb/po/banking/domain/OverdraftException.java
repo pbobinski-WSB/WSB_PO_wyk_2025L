@@ -1,4 +1,4 @@
-package wsb.po.banking;
+package wsb.po.banking.domain;
 
 public class OverdraftException extends Exception {
 

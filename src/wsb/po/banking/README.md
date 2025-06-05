@@ -18,3 +18,7 @@ _Będzie rozwijany przez cały semestr_
 4. Wyjątki
 
 ![img_3.png](img_3.png)
+
+5. Zmiany struktury
+
+![img_4.png](img_4.png)

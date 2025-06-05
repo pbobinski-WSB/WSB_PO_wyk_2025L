@@ -1,6 +1,5 @@
-package wsb.po.banking;
+package wsb.po.banking.domain;
 
-import java.io.IOException;
 import java.io.Serializable;
 
 public class Account implements Serializable {
