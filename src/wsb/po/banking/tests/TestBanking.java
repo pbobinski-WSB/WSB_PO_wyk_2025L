@@ -81,7 +81,7 @@ public class TestBanking
         }
 
         CustomerReport customerReport = new CustomerReport();
-        customerReport.generateRepotr();
+        customerReport.generateReport();
 
     }
 

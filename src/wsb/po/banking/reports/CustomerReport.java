@@ -15,7 +15,7 @@ public class CustomerReport {
             System.out.println("\t\tProcent " + " " + ((SavingsAccount) ba).getInterestRate());
         }
     }
-    public void generateRepotr() {
+    public void generateReport() {
 
         //Bank bank = new Bank();
         Bank bank = Bank.getBank();
